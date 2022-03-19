@@ -1,0 +1,48 @@
+/* Global CSS */
+body{
+    margin: 0px;
+}
+.link-style{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+/* TOP NAVBAR */
+#top-navbar{
+    justify-content: space-between;
+    background-color: rgb(231, 238, 165);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 7vh;
+}
+#navbar-menu{
+    justify-content: space-between;
+}
+#right-side{
+    justify-content: space-between;
+}
+.navbar-menu-option{
+    margin-right: 2rem;
+    list-style: none;
+}
+.navbar-menu-option:hover{
+    color: #3f9c1a;
+}
+#top-navbar-input{
+    border-radius: 5px;
+    border: none;
+    height: 3vh;
+    width: 15vw;
+}
+#top-navbar-button{
+    border-radius: 8px;
+    width: 5vw;
+    height: 2vw;
+    border: 1px #000000 solid;
+    cursor: pointer;
+}
+#top-navbar-button:hover{
+    background-color: #f7f7cf;
+}
