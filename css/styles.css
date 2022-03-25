@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cabin&family=Fredoka&family=League+Spartan&family=Lobster&family=Oswald:wght@200&family=Shippori+Antique+B1&display=swap');
 
-
-
-
 /* Global CSS */
 body{
     margin: 0px;
@@ -10,15 +7,22 @@ body{
 }
 .link-style{
     text-decoration: none;
+    color: #000000;
+}
+.link-style:hover{
+    color: #3f9c1a;
 }
 .flex{
     display: flex;
     align-items: center;
 }
+hr{
+    border: 1px #d4dd7e solid;
+}
 /* TOP NAVBAR */
 #top-navbar{
     justify-content: space-between;
-    background-color: rgb(231, 238, 165);
+    background-color: #e7eea5;
     padding-left: 2rem;
     padding-right: 2rem;
     height: 7vh;
@@ -32,15 +36,14 @@ body{
 .navbar-menu-option{
     margin-right: 2rem;
     list-style: none;
-}
-.navbar-menu-option:hover{
-    color: #3f9c1a;
+    font-size: 18px;
 }
 #top-navbar-input{
     border-radius: 5px;
     border: none;
     height: 3vh;
     width: 15vw;
+    padding-left: 15px;
 }
 #top-navbar-button{
     border-radius: 8px;
@@ -52,39 +55,51 @@ body{
 #top-navbar-button:hover{
     background-color: #f7f7cf;
 }
-
+#logo{
+    font-size: 40px;
+}
 /*TARJETAS*/
 main{
     display: flex;
 }
 
-#Info-partidos{
-    padding: 3em;
-    margin: 1em;
+#info-partidos{
+    padding: 2em;
+    margin: 2em;
+    background-color: #e7eea5;
+    border-radius: 10px;
     text-align: center;
-    width: 350px;
-    height: 660px;
-    background-color: rgb(94, 87, 79);
-    border-radius: 6px;
 }
-
+#info-partidos h1{
+    font-size: 30px;
+}
+#info-partidos span{
+    color: #ff0000;
+}
 .partidos{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 2em;
-    
 }
-
+.partidos div{
+    display: flex;
+}
 .partidos img{
-    padding: 2em;
-    width: 80px;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 100px;
 }
-
+#cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75vw;
+}
 .card{
     margin: 1em;
     padding: 10px;
- 
 }
 .card-content{
 
@@ -92,7 +107,7 @@ main{
     display: inline-block;
     text-align: left;
     padding: 10px;
-    
+    transition: transform .5s;
 }
 
 /*INFORMACION DE LA TEJETA*/
@@ -103,8 +118,6 @@ main{
     color: #ffff;
     
 }
-
-
 .card-info h2{
     font-size: 30px;
 }
@@ -113,8 +126,13 @@ main{
     height: 25px;
     border-radius: 15px;/*
     border: none;*/
-    background-color: rgb(191, 20, 20);
+    background-color: #3f9c1a;
     color: #ffff;
+    cursor: pointer;
+}
+.card-info input:hover{
+    background-color: #e5ff00;
+    color: #000000;
 }
 
 /*IMAGEN DE LA TARJETA*/
@@ -122,14 +140,12 @@ main{
     width: 380px;
     height: 330px;
     border-radius: 15px;
+}
+
+.card-content:hover{
+    transform: scale(1.05);
     transition: transform .5s;
 }
-
-.card-content img:hover{
-    transform: scale(1.1);
-}
-
-
 
 /*FOOTER*/
 footer{
@@ -152,8 +168,8 @@ footer{
     display: flex;
     margin-right: 80px;
 }
-.icon{
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
+#icons a{
+    font-size: 50px;
+    margin-left: 20px;
+    color: #000000;
 }
