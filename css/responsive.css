@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1400px) {
+    #info-partidos{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
+@media only screen and (max-width:900px){
+    main{
+        flex-direction: column;
+    }
+    #cards{
+        width: 100vw;
+        justify-content: center;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(1,1);
+        width: 100vw;
+        justify-content: center;
+    }
+    .card-info{
+        top: 220px;
+        left: 30px;
+    }
+    .card-content img{
+        width: 100%;
+        height: 95%;
+    }
+}
+@media only screen and (max-width:550px){
+    footer{
+        flex-direction: column;
+        
+    }
+    #FAQ{
+        flex-direction: column;
+        margin:0%;
+        padding: 0%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #FAQ div{
+        margin:0%;
+        padding: 0px;
+        text-align: center;
+    }
+    #icons{
+        margin: 0%;
+        margin-left: -15px;
+    }
+    #icons a{
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+    /*
+    .partidos div{
+        flex-direction: column;
+    } 
+    */
+}
