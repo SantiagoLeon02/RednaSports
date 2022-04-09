@@ -59,3 +59,23 @@
     } 
     */
 }
+
+@media only screen and (max-width:450px){
+ 
+    .card-info{
+        top: 60px;
+        left: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width:350px){
+ 
+    .card-info{
+        top: 15px;
+        left: 20px;
+    }
+
+}
+
